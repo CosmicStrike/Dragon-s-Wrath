@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Store</title>
+    <meta name="description" content="The description of page">
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js" async></script>
+    <!--
+        When script is mentioned in head it will load first and then body of html gets loaded.
+        It will take time to load script and thus html will aslo have to wait.
+        To get around this, we will use async keyword
+        This will allows us to load script as well as body of html simultaneously
+    -->
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Wrath Of Dragons</h1>
+    </header>
+
+    <section class="content-section">
+        <h2 class="content-head content-head-index">Welcome to dragon's den</h2>
+        <div class="shop-item">
+            <span class="shop-item-title">NightFury</span>
+            <img class="shop-item-img" src="Images/Dragons/NightFury.png" alt="Night Fury">
+            <div class="shop-item-details">
+                <span class="shop-item-price">400 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">Gren</span>
+            <img class="shop-item-img" src="Images/Dragons/Gren.jpg" alt="Gren">
+            <div class="shop-item-details">
+                <span class="shop-item-price">600 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">L-Drago</span>
+            <img class="shop-item-img" src="Images/Dragons/L-Drago.png" alt="L-Drago">
+            <div class="shop-item-details">
+                <span class="shop-item-price">800 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+
+            <span class="shop-item-title">Drak Flame</span>
+
+            <img class="shop-item-img" src="Images/Dragons/DarkFlame.png" alt="Drak Flame">
+            <div class="shop-item-details">
+                <span class="shop-item-price">700 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content-section">
+        <h2 class="content-head content-head-index">Items</h2>
+        <div class="shop-item">
+            <span class="shop-item-title">Potion</span>
+            <img class="shop-item-img" src="Images/Items/Potion.jpg" alt="Potion">
+            <div class="shop-item-details">
+                <span class="shop-item-price">10 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">Attack-Booster</span>
+            <img class="shop-item-img" src="Images/Items/Attack-Booster.png" alt="Attack Bosster">
+            <div class="shop-item-details">
+                <span class="shop-item-price">40 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">Agility</span>
+            <img class="shop-item-img" src="Images/Items/Agility.jpg" alt="Agility">
+            <div class="shop-item-details">
+                <span class="shop-item-price">100 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">Shield</span>
+            <img class="shop-item-img" src="Images/Items/Shield.jpg" alt="Shield">
+            <div class="shop-item-details">
+                <span class="shop-item-price">20 Gold</span>
+                <button class="row-btn shop-item-btn" type="button">Buy</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content-section">
+        <h2 class="content-head content-head-index">Cart</h2>
+
+        <div class="cart-header">
+            <span class="cart-column cart-item">ITEMS</span>
+            <span class="cart-column cart-price">PRICE</span>
+            <span class="cart-column cart-quantity">QUANTITY</span>
+        </div>
+        <div class="cart">
+        </div>
+
+
+        <div class="cart-footer">
+            <span class="cart-total">TOTAL -</span>
+            <span class="cart-total-price">0 Gold</span>
+        </div>
+
+        <div class="cart-footer">
+            <button class="cart-purchase-button row-btn" type="button">PURCHASE</button>
+        </div>
+
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <h2>Follow us on</h2>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank"><img src="Images/Logos/facebook-logo.png"
+                        alt="FaceBook Logo" width="30vp" height="30vp"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><img src="Images/Logos/twitter-logo.png"
+                        alt="Twitter Logo" widht="30vp" height="30vp"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

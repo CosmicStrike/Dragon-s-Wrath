@@ -1,0 +1,331 @@
+/* 
+There is margin associated with some element in html such as body, html, ul, p etc
+So to remove margin we can set margin attribute to zero
+we can be specific about it, if some elements inside nav should have zero margin but it does not 
+implies that all elements should have zero margin
+
+to overcome this we can use ancseter - child combo
+eg
+where .nav is class name given to nav
+.nav ul{
+    margin:0;
+}
+
+so only those ul under nav will have zero margin
+*/
+
+/*TODO: Units of measurement in css*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    font-family: Raleway;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0.1px;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    /* background-image: url("Images/BackGround/Header.jpg");
+    background-size: cover; */
+    margin: 0;
+    padding: 0;
+    /*this will remove space between browser and body of html*/
+    background-color: rgb(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.nav li {
+    display: inline;
+    padding: 1em;
+    /*to make list elements in one line*/
+}
+
+.nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header {
+
+    padding: 8px;
+    background-image: url("Images/BackGround/Header.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* below will combine color and image */
+    background-blend-mode: multiply;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-family: Metal Mania;
+    font-size: 5em;
+    color: rgba(228, 15, 15, 0.69);
+}
+
+.header h3 {
+    font-family: Metal Mania;
+    font-size: 2.9em;
+    color: rgba(233, 226, 225, 0.9);
+}
+
+section {
+    margin-bottom: 6vh;
+}
+
+.content-section {
+    font-size: 1.2em;
+    /* max-width: 1000px; */
+    /* padding: 1em; */
+    margin: 0 5%;
+    margin-bottom: 120px;
+}
+
+.content-head {
+    text-align: center;
+    font-weight: 2em;
+    font-size: 1.6em;
+    margin: 0.4em 0em;
+}
+
+.content-head-index {
+    margin-bottom: 32px;
+    margin-top: 28px;
+}
+
+.content-img {
+    float: left;
+    width: 26em;
+    height: 20em;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+footer {
+    background-color: rgba(0, 51, 255, 0.2);
+    text-align: center;
+
+}
+
+footer ul li,
+footer ul li h2 {
+    display: inline;
+    padding: 0 1%;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    /*vertical align will keep text in middle  vertically and text align will keep text in middle horizontially*/
+    padding: 0.45em;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.btn-header {
+    margin-top: 1.25em;
+    color: white;
+    background-color: rgba(110, 110, 110, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.4em;
+
+}
+
+.btn-header:hover {
+    background-color: rgba(170, 183, 197, 0.4);
+}
+
+.dragon-row {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    /* width: 100vw; */
+}
+
+.dragon-row:last-child {
+    border: none;
+}
+
+.row-items {
+    display: inline-block;
+    padding-right: 0.9em;
+    margin: 2px;
+    vertical-align: middle;
+    max-height: 10%;
+}
+
+.dragon-img {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.dragon-name {
+    word-wrap: break-word;
+    font-size: 25px;
+    width: 6em;
+    color: goldenrod;
+}
+
+.dragon-type {
+    word-wrap: break-word;
+    font-weight: bolder;
+    width: 6em;
+    color: white;
+}
+
+.dragon-desc {
+    word-wrap: break-word;
+    width: 50vw;
+}
+
+.row-btn {
+    color: rgb(232, 24, 24);
+    background-color: black;
+    border: 2px solid red;
+}
+
+.row-btn:hover {
+    background-color: rgba(255, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
+}
+
+/* ----------  Shop Items  ---------*/
+
+.shop-item {
+    display: inline-block;
+    padding: 1em;
+    margin-left: 3em;
+}
+
+.shop-item-title {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 6px;
+}
+
+.shop-item-img {
+    width: 10em;
+    height: 10em;
+    border-radius: 15%;
+}
+
+.shop-item-img:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 15px rgb(224, 14, 14);
+}
+
+.shop-item-details {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.shop-item-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(238, 230, 8);
+    padding-right: 10px;
+}
+
+.shop-item-btn {
+    width: 4em;
+    height: 1.4em;
+    font-size: 20px;
+}
+
+.cart-row, .cart-header, .cart-footer {
+    display: flex;
+    margin: 0 10%;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.cart-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 1.2em;
+    padding-bottom: 5px;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: 900;
+
+}
+
+.cart-price {
+    width: 25%;
+}
+
+.cart-quantity {
+    width: 30%;
+}
+
+.cart-quantity-input {
+    width: 2.5em;
+    height: 24px;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgb(213, 213, 213);
+}
+
+.cart-quantity-button {
+    width: 5em;
+    height: 26px;
+    font-size: 14px;
+    padding: 1px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-footer {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    margin-right: 10px;
+    color: rgb(255, 200, 97);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cart-total-price {
+    font-size: 24px;
+    color: gold;
+}
+
+.cart-purchase-button {
+    width: 120px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin: 10px;
+}
