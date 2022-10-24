@@ -94,6 +94,7 @@ function AddToCartRow(title, price, imgsrc) {
 function QuantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <= 0) { input.value = 1 }
+    if (input.value > 10) input.value = 10
     UpdateCartTotal()
 }
 
